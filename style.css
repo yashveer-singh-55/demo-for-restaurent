@@ -1988,3 +1988,17 @@ footer{
     height:70vh;
 
     min
+
+   @keyframes ripple{
+    from{
+        width:10px;
+        height:10px;
+        opacity:1;
+    }
+
+    to{
+        width:350px;
+        height:350px;
+        opacity:0;
+    }
+    }
