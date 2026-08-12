@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu | Zaika Indian Kitchen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="preloader">
+    <div class="loader-logo">ZAIKA</div>
+    <div class="loader-line"><span></span></div>
+    <p>Preparing the menu...</p>
+</div>
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+<span class="logo-main">Zaika</span>
+<span class="logo-sub">INDIAN KITCHEN</span>
+</a>
+
+<nav class="desktop-nav">
+
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="menu.html" class="active">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reservations.html">Reservations</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<a href="reservations.html" class="nav-book">
+Book a Table
+</a>
+
+<button class="menu-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</header>
+
+
+<div class="mobile-nav">
+
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reservations.html">Reservations</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<section class="page-hero">
+
+<div class="page-hero-bg menu-bg"></div>
+
+<div class="page-hero-overlay"></div>
+
+<div class="page-hero-content">
+
+<div class="section-label">
+<span></span>
+OUR MENU
+<span></span>
+</div>
+
+<h1>
+A feast for
+<em>every soul.</em>
+</h1>
+
+<p>
+Explore India's finest flavours, crafted with tradition
+and presented with a contemporary touch.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORY NAV -->
+
+<section class="menu-section section">
+
+<div class="menu-categories">
+
+<button class="category active" data-filter="all">
+<i class="fa-solid fa-utensils"></i>
+All
+</button>
+
+<button class="category" data-filter="starter">
+<i class="fa-solid fa-bowl-food"></i>
+Starters
+</button>
+
+<button class="category" data-filter="veg">
+<i class="fa-solid fa-leaf"></i>
+Vegetarian
+</button>
+
+<button class="category" data-filter="nonveg">
+<i class="fa-solid fa-drumstick-bite"></i>
+Non-Veg
+</button>
+
+<button class="category" data-filter="biryani">
+<i class="fa-solid fa-bowl-rice"></i>
+Biryani
+</button>
+
+<button class="category" data-filter="bread">
+<i class="fa-solid fa-bread-slice"></i>
+Breads
+</button>
+
+<button class="category" data-filter="dessert">
+<i class="fa-solid fa-ice-cream"></i>
+Desserts
+</button>
+
+<button class="category" data-filter="drink">
+<i class="fa-solid fa-mug-hot"></i>
+Drinks
+</button>
+
+</div>
+
+
+<!-- SPIRAL DECK -->
+
+<div class="spiral-wrapper">
+
+<div class="spiral-intro">
+
+<span>DRAG / SWIPE</span>
+
+<h2>
+Discover our
+<em>signature plates.</em>
+</h2>
+
+<p>
+Swipe through the cards or click a dish to reveal its story.
+</p>
+
+</div>
+
+
+<div class="dish-deck" id="dishDeck">
+
+
+<article class="deck-card"
+data-category="biryani"
+data-name="Royal Dum Biryani"
+data-price="₹480"
+data-description="Long grain basmati rice, saffron, caramelized onions, mint and aromatic spices layered with tender meat and slow cooked in a sealed dum pot.">
+
+<img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>CHEF'S SIGNATURE</span>
+
+<h3>Royal Dum Biryani</h3>
+
+<strong>₹480</strong>
+
+</div>
+
+</article>
+
+
+<article class="deck-card"
+data-category="nonveg"
+data-name="Butter Chicken"
+data-price="₹420"
+data-description="Chargrilled chicken simmered in a rich tomato, butter and cream gravy with our secret spice blend.">
+
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>NORTH INDIAN CLASSIC</span>
+
+<h3>Butter Chicken</h3>
+
+<strong>₹420</strong>
+
+</div>
+
+</article>
+
+
+<article class="deck-card"
+data-category="veg"
+data-name="Paneer Tikka"
+data-price="₹340"
+data-description="Soft cottage cheese marinated with hung curd, Kashmiri chilli, coriander and aromatic spices before being charred in our tandoor.">
+
+<img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>TANDOOR</span>
+
+<h3>Paneer Tikka</h3>
+
+<strong>₹340</strong>
+
+</div>
+
+</article>
+
+
+<article class="deck-card"
+data-category="starter"
+data-name="Chicken Seekh Kebab"
+data-price="₹390"
+data-description="Minced chicken blended with herbs and spices, skewered and cooked over charcoal.">
+
+<img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>CHARCOAL GRILL</span>
+
+<h3>Chicken Seekh Kebab</h3>
+
+<strong>₹390</strong>
+
+</div>
+
+</article>
+
+
+<article class="deck-card"
+data-category="veg"
+data-name="Dal Makhani"
+data-price="₹290"
+data-description="Whole black lentils slowly simmered overnight with butter, cream, garlic and spices.">
+
+<img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>SLOW COOKED</span>
+
+<h3>Dal Makhani</h3>
+
+<strong>₹290</strong>
+
+</div>
+
+</article>
+
+
+<article class="deck-card"
+data-category="nonveg"
+data-name="Lamb Rogan Josh"
+data-price="₹520"
+data-description="Tender lamb cooked slowly in Kashmiri spices, yogurt and aromatic saffron.">
+
+<img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=1000&q=90">
+
+<div class="deck-info">
+
+<span>KASHMIRI SPECIAL</span>
+
+<h3>Lamb Rogan Josh</h3>
+
+<strong>₹520</strong>
+
+</div>
+
+</article>
+
+</div>
+
+
+<div class="deck-controls">
+
+<button id="deckPrev">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<div class="deck-progress">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<button id="deckNext">
+<i class="fa-solid fa-arrow-right"></i>
+</button>
+
+</div>
+
+</div>
+
+
+<!-- COMPLETE MENU -->
+
+<div class="complete-menu">
+
+<div class="section-heading center">
+
+<div class="section-label">
+<span></span>
+COMPLETE MENU
+<span></span>
+</div>
+
+<h2>
+From <em>start</em> to finish.
+</h2>
+
+</div>
+
+
+<div class="menu-grid">
+
+
+<!-- STARTERS -->
+
+<div class="menu-category-title">
+
+<span>01</span>
+
+<h3>Starters & Tandoor</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="starter">
+
+<img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Chicken Seekh Kebab</h4>
+<p>Charcoal grilled minced chicken kebabs.</p>
+</div>
+
+<strong>₹390</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="starter">
+
+<img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Paneer Tikka</h4>
+<p>Charred cottage cheese with royal spices.</p>
+</div>
+
+<strong>₹340</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="starter">
+
+<img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Tandoori Chicken</h4>
+<p>Classic clay oven roasted chicken.</p>
+</div>
+
+<strong>₹420</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="starter">
+
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Malai Broccoli</h4>
+<p>Creamy marinated broccoli grilled in tandoor.</p>
+</div>
+
+<strong>₹320</strong>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="menu-category-title">
+
+<span>02</span>
+
+<h3>Curries & Mains</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="nonveg">
+
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Butter Chicken</h4>
+<p>Smoky chicken in creamy tomato gravy.</p>
+</div>
+
+<strong>₹420</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="nonveg">
+
+<img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Chicken Tikka Masala</h4>
+<p>Charred chicken in spiced tomato gravy.</p>
+</div>
+
+<strong>₹410</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="veg">
+
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Shahi Paneer</h4>
+<p>Paneer cooked in a luxurious nut gravy.</p>
+</div>
+
+<strong>₹350</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="veg">
+
+<img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Dal Makhani</h4>
+<p>Overnight slow-cooked black lentils.</p>
+</div>
+
+<strong>₹290</strong>
+
+</div>
+
+
+<!-- BIRYANI -->
+
+<div class="menu-category-title">
+
+<span>03</span>
+
+<h3>Biryani</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="biryani">
+
+<img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3972?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Royal Chicken Biryani</h4>
+<p>Saffron basmati rice with chicken.</p>
+</div>
+
+<strong>₹480</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="biryani">
+
+<img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Mutton Dum Biryani</h4>
+<p>Slow cooked tender mutton with basmati.</p>
+</div>
+
+<strong>₹550</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="biryani">
+
+<img src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Vegetable Biryani</h4>
+<p>Garden vegetables with fragrant rice.</p>
+</div>
+
+<strong>₹350</strong>
+
+</div>
+
+
+<!-- BREAD -->
+
+<div class="menu-category-title">
+
+<span>04</span>
+
+<h3>Indian Breads</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="bread">
+
+<img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Butter Naan</h4>
+<p>Soft tandoori naan brushed with butter.</p>
+</div>
+
+<strong>₹90</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="bread">
+
+<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Garlic Naan</h4>
+<p>Charred naan with garlic and coriander.</p>
+</div>
+
+<strong>₹120</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="bread">
+
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Laccha Paratha</h4>
+<p>Flaky layered whole wheat bread.</p>
+</div>
+
+<strong>₹110</strong>
+
+</div>
+
+
+<!-- DESSERT -->
+
+<div class="menu-category-title">
+
+<span>05</span>
+
+<h3>Desserts</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="dessert">
+
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Chocolate Gulab Jamun</h4>
+<p>Warm gulab jamun with dark chocolate.</p>
+</div>
+
+<strong>₹190</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="dessert">
+
+<img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Kesar Kulfi</h4>
+<p>Traditional saffron pistachio kulfi.</p>
+</div>
+
+<strong>₹160</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="dessert">
+
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Mango Rasmalai</h4>
+<p>Soft rasmalai infused with Alphonso mango.</p>
+</div>
+
+<strong>₹210</strong>
+
+</div>
+
+
+<!-- DRINKS -->
+
+<div class="menu-category-title">
+
+<span>06</span>
+
+<h3>Drinks</h3>
+
+</div>
+
+
+<div class="menu-item"
+data-category="drink">
+
+<img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Mango Lassi</h4>
+<p>Thick creamy Alphonso mango lassi.</p>
+</div>
+
+<strong>₹150</strong>
+
+</div>
+
+
+<div class="menu-item"
+data-category="drink">
+
+<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=80">
+
+<div>
+<h4>Masala Chaas</h4>
+<p>Refreshing spiced buttermilk.</p>
+</div>
+
+<strong>₹100</strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MODAL -->
+
+<div class="dish-modal">
+
+<div class="modal-inner">
+
+<button class="modal-close">
+<i class="fa-solid fa-xmark"></i>
+</button>
+
+<img id="modalImage" src="" alt="Dish">
+
+<div class="modal-content">
+
+<span id="modalCategory"></span>
+
+<h2 id="modalName"></h2>
+
+<p id="modalDescription"></p>
+
+<strong id="modalPrice"></strong>
+
+<a href="reservations.html" class="gold-btn">
+Reserve a Table
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<div class="footer-main">
+
+<div class="footer-brand">
+
+<a href="index.html" class="logo">
+<span class="logo-main">Zaika</span>
+<span class="logo-sub">INDIAN KITCHEN</span>
+</a>
+
+<p>Authentic Indian flavours, unforgettable experiences.</p>
+
+</div>
+
+<div class="footer-links">
+
+<h4>Explore</h4>
+
+<a href="about.html">Our Story</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+
+</div>
+
+<div class="footer-links">
+
+<h4>Visit</h4>
+
+<p>123 Connaught Place</p>
+<p>New Delhi, India</p>
+<p>+91 12345 67890</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Zaika Indian Kitchen
+</div>
+
+</footer>
+
+
+<div class="floating-social">
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://wa.me/911234567890">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
