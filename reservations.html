@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reservations | Zaika</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="preloader">
+
+<div class="loader-logo">ZAIKA</div>
+
+<div class="loader-line">
+<span></span>
+</div>
+
+<p>Preparing your table...</p>
+
+</div>
+
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+
+<header class="navbar">
+
+<a href="index.html" class="logo">
+
+<span class="logo-main">Zaika</span>
+
+<span class="logo-sub">
+INDIAN KITCHEN
+</span>
+
+</a>
+
+
+<nav class="desktop-nav">
+
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reservations.html" class="active">Reservations</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<a href="reservations.html" class="nav-book">
+Book a Table
+</a>
+
+
+<button class="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+</header>
+
+
+<div class="mobile-nav">
+
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="reservations.html">Reservations</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+
+<section class="page-hero">
+
+<div class="page-hero-bg reservation-bg"></div>
+
+<div class="page-hero-overlay"></div>
+
+<div class="page-hero-content">
+
+<div class="section-label">
+
+<span></span>
+
+RESERVATIONS
+
+<span></span>
+
+</div>
+
+
+<h1>
+
+Your table
+<em>awaits.</em>
+
+</h1>
+
+
+<p>
+
+Tell us when you're coming.
+We'll take care of everything else.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="reservation-section section">
+
+
+<div class="reservation-layout">
+
+
+<div class="reservation-info">
+
+<div class="section-label">
+
+<span></span>
+
+RESERVE YOUR EXPERIENCE
+
+</div>
+
+
+<h2>
+
+Good food.
+<br>
+
+Great company.
+<br>
+
+<em>Perfect evening.</em>
+
+</h2>
+
+
+<p>
+
+Whether it's an intimate dinner, family celebration,
+business lunch or a special occasion, we'd love to host you.
+
+</p>
+
+
+<div class="reservation-perks">
+
+
+<div>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+Instant confirmation
+</span>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+Special occasion requests
+</span>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+Private dining available
+</span>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-check"></i>
+
+<span>
+Dietary preferences welcomed
+</span>
+
+</div>
+
+
+</div>
+
+
+<div class="direct-book">
+
+<span>Prefer WhatsApp?</span>
+
+<a href="https://wa.me/911234567890"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+Chat with us
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="booking-form-container">
+
+<form id="bookingForm" class="booking-form">
+
+
+<div class="form-title">
+
+<span>01</span>
+
+<div>
+
+<h3>Guest Details</h3>
+
+<p>Tell us a little about yourself.</p>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="input-group">
+
+<label>
+Your Name
+</label>
+
+<input
+type="text"
+name="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+Phone Number
+</label>
+
+<input
+type="tel"
+name="phone"
+placeholder="+91 XXXXX XXXXX"
+required>
+
+</div>
+
+</div>
+
+
+<div class="form-title">
+
+<span>02</span>
+
+<div>
+
+<h3>Reservation Details</h3>
+
+<p>When should we expect you?</p>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="input-group">
+
+<label>
+Date
+</label>
+
+<input
+type="date"
+name="date"
+required>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+Time
+</label>
+
+<select name="time" required>
+
+<option value="">Select time</option>
+
+<option>12:00 PM</option>
+<option>12:30 PM</option>
+<option>1:00 PM</option>
+<option>1:30 PM</option>
+<option>7:00 PM</option>
+<option>7:30 PM</option>
+<option>8:00 PM</option>
+<option>8:30 PM</option>
+<option>9:00 PM</option>
+<option>9:30 PM</option>
+<option>10:00 PM</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+Number of Guests
+</label>
+
+<select name="guests" required>
+
+<option value="">Select guests</option>
+
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5 Guests</option>
+<option>6 Guests</option>
+<option>7 Guests</option>
+<option>8+ Guests</option>
+
+</select>
+
+</div>
+
+
+<div class="input-group">
+
+<label>
+Special Request
+</label>
+
+<textarea
+name="message"
+placeholder="Birthday, anniversary, dietary requirements, seating preference..."></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="gold-btn full">
+
+Confirm Reservation
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+
+<p class="form-note">
+
+By submitting, you agree to receive reservation
+confirmation via phone/WhatsApp.
+
+</p>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="booking-bottom">
+
+<div>
+
+<i class="fa-solid fa-phone"></i>
+
+<strong>Call us</strong>
+
+<span>+91 12345 67890</span>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<strong>Opening Hours</strong>
+
+<span>11 AM — 11 PM</span>
+
+</div>
+
+
+<div>
+
+<i class="fa-solid fa-location-dot"></i>
+
+<strong>Location</strong>
+
+<span>Connaught Place, New Delhi</span>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-main">
+
+<div class="footer-brand">
+
+<a href="index.html" class="logo">
+
+<span class="logo-main">Zaika</span>
+
+<span class="logo-sub">
+INDIAN KITCHEN
+</span>
+
+</a>
+
+<p>
+Authentic Indian flavours,
+unforgettable experiences.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Explore</h4>
+
+<a href="index.html">Home</a>
+<a href="about.html">Our Story</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Visit</h4>
+
+<p>123 Connaught Place</p>
+<p>New Delhi, India</p>
+<p>+91 12345 67890</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Zaika Indian Kitchen
+
+</div>
+
+</footer>
+
+
+<div class="floating-social">
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+<a href="https://wa.me/911234567890">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
